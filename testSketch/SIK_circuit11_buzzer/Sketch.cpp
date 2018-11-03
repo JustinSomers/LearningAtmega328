@@ -37,14 +37,14 @@ const int songLength = 18;  // sets the number of notes of the song
 // in your song. A space represents a rest (no tone)
 
 char notes[songLength] = {
-  'c', 'd', 'f', 'd', 'a', ' ', 'a', 'g', ' ', 'c', 'd', 'f', 'd', 'g', ' ', 'g', 'f', ' '}; 
+  'c', 'c', 'c', 'c', 'a', ' ', 'a', 'g', ' ', 'c', 'd', 'f', 'd', 'g', ' ', 'g', 'f', ' '}; 
 
 // beats[] is an array of values for each note. A "1" represents a quarter-note, 
 // "2" a half-note, and "4" a quarter-note.
 // Don't forget that the rests (spaces) need a length as well.
 
-int beats[songLength] = {
-  1, 1, 1, 1, 1, 1, 4, 4, 2, 1, 1, 1, 1, 1, 1, 4, 4, 2};
+double beats[songLength] = {
+  0.33, 0.33, 0.33, 1, 1, 1, 4, 4, 2, 1, 1, 1, 1, 1, 1, 4, 4, 2};
 
 int tempo = 113;  // The tempo is how fast to play the song (beats per second).
 
